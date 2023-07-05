@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Workflow
+metadata:
+  name: my-github-actions-workflow
+  description: Workflow for GitHub Actions
+  owner: user@example.com
+spec:
+  type: github-actions
+  steps:
+    - id: checkout
+      name: Checkout code
+      type: checkout
+      action: "github-actions/checkout@v2"
+    - id: build
+      name: Build project
+      type: script
+      action: "yarn build"
+    - id: test
+      name: Run tests
+      type: script
+      action: "yarn test"
