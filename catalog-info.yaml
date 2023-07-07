@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: RapidxWorkFlow
   annotations:
-    github.com/project-slug: RutujaGadhave-Hexaware/RepoForWorkflow
+    jenkins.io/job-full-name: RutujaGadhave-Hexaware/RepoForWorkflow
 spec:
   type: service
   owner: user:guest
